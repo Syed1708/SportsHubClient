@@ -1,12 +1,80 @@
-# React + Vite
+SportsHub 🏃‍♂️🏅
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Athletic Event Booking Platform
 
-Currently, two official plugins are available:
+Category: Assignment-11-assignment_category_16
+✅ Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SportsHub is a full-stack athletic event booking platform that connects athletes and sports enthusiasts with local athletic events. Users can browse upcoming events, view details, book participation, manage bookings, and — for event creators — create, update and delete events. The project demonstrates user authentication, database management, REST APIs, and client-side routing.
 
-## Expanding the ESLint configuration
+Live: <https://keen-cuchufli-37dd25.netlify.app/>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 Purpose
+
+Build a production-ready full-stack application to practice:
+
+    User registration & login (email/password + social)
+
+    Authentication (JWT or Firebase)
+
+    CRUD operations for events & bookings
+
+    Responsive UI and accessibility
+
+    Deployment of both client and server with secure environment variables
+
+🔑 Key Features
+
+    User authentication (Email/Password + Google or GitHub)
+
+    Dynamic homepage with carousel & featured events
+
+    Events listing page with search & filters (name/location)
+
+    Event details & booking (private route)
+
+    Create / Update / Delete Events (owner-only)
+
+    My Bookings (table & card view toggle)
+
+    Responsive design (mobile / tablet / desktop)
+
+    Toast notifications & loading spinners
+
+    Dynamic page titles & custom 404
+
+    JWT token generation & verification (or Firebase approach)
+
+    Prevent duplicate bookings
+
+    Environment-secured Firebase & MongoDB credentials
+
+🧰 Tech Stack
+
+Client
+
+    React, React Router
+
+    State management: Context / Redux (your choice)
+
+    Styling: CSS / Tailwind / UI library (optional)
+
+    Form handling: react-hook-form / Formik
+
+    Authentication: Firebase Auth (or custom JWT)
+
+Server
+
+    Node.js, Express
+
+    MongoDB (Atlas)
+
+    Authentication: JWT (or verify Firebase tokens)
+
+    CORS, cookie handling
+
+Other
+
+    Deployment: Vercel / Netlify (client) & Render / Heroku / Railway (server)
+
+    Tools: ESLint, Prettier, Husky (optional)
