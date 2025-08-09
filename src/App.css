@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@custom-variant dark (&:where(.dark, .dark *));
+.active{
+    background-color: rgb(67, 242, 145);
+    color: #181313;
+    margin: 0px 4px;
+}
+.active:hover{
+    background-color: rgb(89, 209, 143);
+    color: #181313;
+}
