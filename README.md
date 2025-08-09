@@ -2,7 +2,6 @@ SportsHub 🏃‍♂️🏅
 
 An Athletic Event Booking Platform
 
-Category: Assignment-11-assignment_category_16
 ✅ Project Overview
 
 SportsHub is a full-stack athletic event booking platform that connects athletes and sports enthusiasts with local athletic events. Users can browse upcoming events, view details, book participation, manage bookings, and — for event creators — create, update and delete events. The project demonstrates user authentication, database management, REST APIs, and client-side routing.
@@ -29,7 +28,7 @@ Build a production-ready full-stack application to practice:
 
     Dynamic homepage with carousel & featured events
 
-    Events listing page with search & filters (name/location)
+    Events listing page with search & filters (name)
 
     Event details & booking (private route)
 
@@ -55,13 +54,13 @@ Client
 
     React, React Router
 
-    State management: Context / Redux (your choice)
+    State management: Context api
 
-    Styling: CSS / Tailwind / UI library (optional)
+    Styling: CSS / Tailwind / daisyUI
 
-    Form handling: react-hook-form / Formik
+    Form handling: react-hook-form
 
-    Authentication: Firebase Auth (or custom JWT)
+    Authentication: Firebase Auth and JWT
 
 Server
 
@@ -69,12 +68,10 @@ Server
 
     MongoDB (Atlas)
 
-    Authentication: JWT (or verify Firebase tokens)
+    Authentication: JWT with verify Firebase tokens
 
     CORS, cookie handling
 
 Other
 
-    Deployment: Vercel / Netlify (client) & Render / Heroku / Railway (server)
-
-    Tools: ESLint, Prettier, Husky (optional)
+    Deployment: Vercel and Netlify (client)
