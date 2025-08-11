@@ -6,7 +6,7 @@ An Athletic Event Booking Platform
 
 SportsHub is a full-stack athletic event booking platform that connects athletes and sports enthusiasts with local athletic events. Users can browse upcoming events, view details, book participation, manage bookings, and — for event creators — create, update and delete events. The project demonstrates user authentication, database management, REST APIs, and client-side routing.
 
-Live: <https://keen-cuchufli-37dd25.netlify.app/>
+Live: <https://sportshub2001.netlify.app/>
 
 🎯 Purpose
 
