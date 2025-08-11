@@ -10,7 +10,7 @@ export default function FooterSocialIcons() {
     <nav>
       <div className="flex gap-5">
         <a
-          href="https://facebook.com/fake"
+          href="https://facebook.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-blue-600 transition-colors duration-300 text-xl"
@@ -18,7 +18,7 @@ export default function FooterSocialIcons() {
           <FaFacebookF />
         </a>
         <a
-          href="https://instagram.com/fake"
+          href="https://instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-pink-500 transition-colors duration-300 text-xl"
@@ -26,7 +26,7 @@ export default function FooterSocialIcons() {
           <FaInstagram />
         </a>
         <a
-          href="https://twitter.com/fake"
+          href="https://twitter.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-blue-400 transition-colors duration-300 text-xl"
@@ -34,7 +34,7 @@ export default function FooterSocialIcons() {
           <FaXTwitter />
         </a>
         <a
-          href="https://youtube.com/fake"
+          href="https://youtube.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-red-600 transition-colors duration-300 text-xl"
