@@ -9,6 +9,8 @@ import Loading2 from "@/components/Loading2";
 const Events = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
+    const ITEMS_PER_PAGE = 6;
+  const [currentPage, setCurrentPage] = useState(1);
 
 const axiosSecure = useAxiosSecure();
 
@@ -26,6 +28,21 @@ const axiosSecure = useAxiosSecure();
     });
 }, [axiosSecure]);
 
+      // Pagination
+  const totalPages = Math.ceil(events.length / ITEMS_PER_PAGE); 
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const currentEvents = events.slice(
+    startIndex,
+    startIndex + ITEMS_PER_PAGE
+  );
+
+  const goPrev = () => {
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  };
+
+  const goNext = () => {
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+  };
   if (loading) return <Loading2 />;
 
 
@@ -33,10 +50,11 @@ const axiosSecure = useAxiosSecure();
     <div className="max-w-6xl mx-auto px-4 py-10">
       <h2 className="text-3xl font-bold mb-6 text-center">Upcoming Events</h2>
 
-            {events.length > 0 ? (
+            {currentEvents.length > 0 ? (
         <>
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {events.map((event) => (
+        {currentEvents.map((event) => (
+          <>
           <div
             key={event._id}
             className="card shadow-lg rounded-2xl overflow-hidden"
@@ -58,6 +76,8 @@ const axiosSecure = useAxiosSecure();
               </Link>
             </div>
           </div>
+
+          </>
         ))}
       </div>
 
@@ -67,6 +87,28 @@ const axiosSecure = useAxiosSecure();
           <Lottie animationData={noData} loop={true} />
         </div>
       )}
+
+               {/* Pagination */}
+          <div className="flex justify-center items-center gap-4 mt-6">
+            <button
+              onClick={goPrev}
+              disabled={currentPage === 1}
+              className="btn btn-sm btn-outline"
+            >
+              Previous
+            </button>
+            <span>
+              Page {currentPage} of {totalPages}
+            </span>
+            <button
+              onClick={goNext}
+              disabled={currentPage === totalPages}
+              className="btn btn-sm btn-outline"
+            >
+              Next
+            </button>
+          </div>
+
     </div>
   );
 };
